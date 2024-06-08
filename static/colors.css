@@ -1,0 +1,6 @@
+:root {
+    --text: #F6F6F6;
+    --buttons: #0F2F38;
+    --radial-bg: radial-gradient(89.12% 42.87% at 50.08% 50.93%, #2B606F 0%, #0D3642 100%);
+    --linear-bg: linear-gradient(170deg, #0F2F38 9.2%, #224B56 91.67%);
+}
