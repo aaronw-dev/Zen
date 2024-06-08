@@ -1,12 +1,12 @@
 @font-face {
     font-family: Inter;
-    src: url("./font/Inter-Bold.ttf");
+    src: url("../font/Inter-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: Inter;
-    src: url("./font/Inter-ExtraLight.ttf");
+    src: url("../font/Inter-ExtraLight.ttf");
     font-weight: lighter;
 }
 
