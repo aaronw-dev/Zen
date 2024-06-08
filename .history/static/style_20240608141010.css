@@ -116,10 +116,13 @@ p {
 }
 
 .inspirational_quote{
-    width: 100%; 
-    height: 100%; 
-    background: rgba(219.94, 219.94, 219.94, 0.11); border-radius: 18px;
-    backdrop-filter: blur(8.90px);
+    overflow: hidden;
+    width: 538px;
+    height: 215px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(4.449999809265137px);
 
 }
 .inspirational_quote p{
@@ -144,7 +147,7 @@ p {
 }
 .bottom-icons img{
     height: 39px;
-    padding-bottom: 10px;
+    margin-bottom: 100px;
 }
 .header{
     display: flex;

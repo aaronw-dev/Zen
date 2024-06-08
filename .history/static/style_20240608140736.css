@@ -143,8 +143,7 @@ p {
     gap: 40px;
 }
 .bottom-icons img{
-    height: 39px;
-    padding-bottom: 10px;
+    height: 20px;
 }
 .header{
     display: flex;

@@ -134,6 +134,7 @@ nav img {
     content: "- ";
 }
 .audio-play {
+    fill="#D9D9D9"
 }
 .mindful-actions {
     display: flex;

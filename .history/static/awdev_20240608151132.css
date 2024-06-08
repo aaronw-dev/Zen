@@ -133,8 +133,7 @@ nav img {
 .quote-author::before {
     content: "- ";
 }
-.audio-play {
-}
+.mind
 .mindful-actions {
     display: flex;
     flex-direction: row;

@@ -15,9 +15,7 @@ html {
 }
 
 body {
-    background: radial-gradient(89.12% 42.87% at 50.08% 50.93%, #2B606F 0%, #0D3642 100%);
-    width: 603px;
-    height: 1339px;
+    height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -133,7 +131,7 @@ p {
 }
 
 .bottom-icons {
-    height: 40px;
+    height: 30px;
     background: #16404B;
     display: flex;
     justify-content: center;
@@ -142,9 +140,16 @@ p {
     width: 100%;
     gap: 40px;
 }
-.bottom-icons img{
-    height: 39px;
-    padding-bottom: 10px;
+.bottom-icons div {
+    width: 30.61px; 
+    height: 43.72px; 
+    left: 10.93px; 
+    top: 4.37px; 
+    position: absolute;
+    background: #F6F6F6;
+    padding:10px;
+    width: 50px;
+    height: 50px;
 }
 .header{
     display: flex;
@@ -158,26 +163,14 @@ p {
 }
 
 .section-title{
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.section-title h3{
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    
 }
 .quote{
     color: #F6F6F6;
+    text-align: right;
     font-family: Inter;
-    font-size: 28px;
-    font-style: italic;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 200;
     line-height: normal;
 }

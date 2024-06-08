@@ -133,8 +133,7 @@ nav img {
 .quote-author::before {
     content: "- ";
 }
-.audio-play {
-}
+
 .mindful-actions {
     display: flex;
     flex-direction: row;
@@ -143,36 +142,21 @@ nav img {
     align-items: normal;
     align-content: normal;
   }
-  .mindful-audio {
-    padding-top: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: stretch;
+  
+  .fmindful-actions:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
   }
-  .mindful-wave {
-    padding-left: 15px;
-  }
-
-  .mindful-title{
-    align-items: left;
-    padding-top: 10px;
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .mindful-time{
-    align-items: right;
-    padding-top: 10px;
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
   }

@@ -133,8 +133,7 @@ nav img {
 .quote-author::before {
     content: "- ";
 }
-.audio-play {
-}
+
 .mindful-actions {
     display: flex;
     flex-direction: row;
@@ -144,7 +143,6 @@ nav img {
     align-content: normal;
   }
   .mindful-audio {
-    padding-top: 10px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -152,10 +150,6 @@ nav img {
     align-items: normal;
     align-content: stretch;
   }
-  .mindful-wave {
-    padding-left: 15px;
-  }
-
   .mindful-title{
     align-items: left;
     padding-top: 10px;

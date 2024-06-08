@@ -144,7 +144,7 @@ p {
 }
 .bottom-icons img{
     height: 39px;
-    padding-bottom: 10px;
+    bottom-padding: 10px;
 }
 .header{
     display: flex;

@@ -133,18 +133,13 @@ p {
 }
 
 .bottom-icons {
-    height: 40px;
-    background: #16404B;
     display: flex;
+    width: 603px;
+    height: 94px;
     justify-content: center;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    gap: 40px;
-}
-.bottom-icons img{
-    height: 39px;
-    padding-bottom: 10px;
+    align-items: center;
+    gap: 59px;
+    flex-shrink: 0;
 }
 .header{
     display: flex;

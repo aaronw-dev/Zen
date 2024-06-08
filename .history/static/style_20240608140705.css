@@ -142,10 +142,6 @@ p {
     width: 100%;
     gap: 40px;
 }
-.bottom-icons img{
-    height: 39px;
-    padding-bottom: 10px;
-}
 .header{
     display: flex;
     align-items: center;

@@ -15,9 +15,7 @@ html {
 }
 
 body {
-    background: radial-gradient(89.12% 42.87% at 50.08% 50.93%, #2B606F 0%, #0D3642 100%);
-    width: 603px;
-    height: 1339px;
+    height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -120,7 +118,6 @@ p {
     height: 100%; 
     background: rgba(219.94, 219.94, 219.94, 0.11); border-radius: 18px;
     backdrop-filter: blur(8.90px);
-
 }
 .inspirational_quote p{
     font-size: 20px;
@@ -133,51 +130,17 @@ p {
 }
 
 .bottom-icons {
-    height: 40px;
-    background: #16404B;
+    width: 100%; 
+    height: 100%; 
+    background: #16404B
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
-    gap: 40px;
+    gap: 20px;
 }
-.bottom-icons img{
-    height: 39px;
-    padding-bottom: 10px;
-}
-.header{
-    display: flex;
-    align-items: center;
-}
-.header img {
-    margin-right: auto;
-}
-.header-name {
-    margin-left: auto;
-}
-
-.section-title{
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.section-title h3{
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.quote{
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 200;
-    line-height: normal;
+.bottom-icons div {
+    width: 50px;
+    height: 50px;
 }
