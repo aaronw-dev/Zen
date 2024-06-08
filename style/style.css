@@ -16,8 +16,6 @@ html {
 
 body {
     background: radial-gradient(89.12% 42.87% at 50.08% 50.93%, #2B606F 0%, #0D3642 100%);
-    width: 603px;
-    height: 1339px;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -94,6 +92,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .features {
     display: flex;
     flex-direction: column;
@@ -106,6 +105,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .action-buttons button {
     width: 100%;
     padding: 5px 30px;
@@ -115,20 +115,24 @@ p {
     border-radius: 15px;
 }
 
-.inspirational_quote{
-    width: 100%; 
-    height: 100%; 
-    background: rgba(219.94, 219.94, 219.94, 0.11); border-radius: 18px;
+.inspirational_quote {
+    width: 100%;
+    height: 100%;
+    background: rgba(219.94, 219.94, 219.94, 0.11);
+    border-radius: 18px;
     backdrop-filter: blur(8.90px);
 
 }
-.inspirational_quote p{
+
+.inspirational_quote p {
     font-size: 20px;
 }
-.mindful_breathing{
-    width: 100%; 
-    height: 100%; 
-    background: rgba(219.94, 219.94, 219.94, 0.11); border-radius: 18px;
+
+.mindful_breathing {
+    width: 100%;
+    height: 100%;
+    background: rgba(219.94, 219.94, 219.94, 0.11);
+    border-radius: 18px;
     backdrop-filter: blur(8.90px);
 }
 
@@ -142,22 +146,26 @@ p {
     width: 100%;
     gap: 40px;
 }
-.bottom-icons img{
+
+.bottom-icons img {
     height: 39px;
     padding-bottom: 10px;
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
 }
+
 .header img {
     margin-right: auto;
 }
+
 .header-name {
     margin-left: auto;
 }
 
-.section-title{
+.section-title {
     color: #F6F6F6;
     font-family: Inter;
     font-size: 32px;
@@ -165,7 +173,8 @@ p {
     font-weight: 700;
     line-height: normal;
 }
-.section-title h3{
+
+.section-title h3 {
     color: #F6F6F6;
     font-family: Inter;
     font-size: 24px;
@@ -173,7 +182,8 @@ p {
     font-weight: 700;
     line-height: normal;
 }
-.quote{
+
+.quote {
     color: #F6F6F6;
     font-family: Inter;
     font-size: 28px;
