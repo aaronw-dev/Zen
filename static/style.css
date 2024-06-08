@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Inter;
+    src: url("./font/Inter-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./font/Inter-ExtraLight.ttf");
+    font-weight: lighter;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(170deg, #0F2F38 9.2%, #224B56 91.67%);
+}
+
+* {
+    font-family: Inter;
+    color: white;
+    font-weight: lighter;
+}
+
+.hero {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-name {
+    font-size: 60px;
+}
