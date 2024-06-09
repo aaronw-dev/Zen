@@ -20,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: var(--linear-bg);
+    overflow: hidden;
 }
 
 #begin {
@@ -39,7 +40,8 @@ body {
     position: fixed;
     top: 0;
     left: 100vw;
-    display: block;
+    display: flex;
+    flex-direction: column;
     transition: 400ms left;
 }
 
@@ -234,10 +236,16 @@ nav img {
     position: absolute;
     bottom: 0px;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     background-color: #16404B;
     padding: 10px 0px;
     gap: 40px;
+    transform: translateY(0%);
+    transition: 400ms transform;
+}
+
+.bottom-nav.closed {
+    transform: translateY(100%);
 }
 
 .bottom-nav img {

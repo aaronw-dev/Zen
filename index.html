@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/journal.css">
     <script src="/script/swiped-events.min.js"></script>
-    <script src="/script/script.js"></script>
     <link rel="icon" type="image/png" href="logo/logo-512.png">
     <link rel="manifest" href="manifest.json" />
 
@@ -31,7 +30,7 @@
         </div>
 
         <div class="action-buttons">
-            <button onclick="openPanel('dashboard')">Get Started</button>
+            <button onclick="openPanel('dashboard',false);setNavOpen(true)">Get Started</button>
             <!--<button>Log In</button>-->
         </div>
     </section>
@@ -88,19 +87,20 @@
 
             <div class="journal-block">
                 <h1 class="journal-block-title">Journal #1</h1>
-                <h1 class="journal-block-date">Date</h1>
-                <textarea cols="46" rows="37" class="journal-block-text"
-                    placeholder="Write your thoughts here..."></textarea>
+                <h1 class="journal-block-date" id="journaldate">Date</h1>
+                <textarea class="journal-block-text" placeholder="Write your thoughts here..."></textarea>
             </div>
         </div>
     </section>
-    <div class="bottom-nav">
+    <div class="bottom-nav closed" id="bottomnav">
         <img src="/icons/counselling.svg">
-        <img src="/icons/journal.svg">
+        <img src="/icons/journal.svg" onclick="openPanel('journal')">
         <img src="/icons/crisis.svg">
         <img src="/icons/meditate.svg">
         <img src="/icons/profile.svg">
     </div>
+    <script src="/script/script.js"></script>
+    <script src="/script/journal.js"></script>
 </body>
 
 </html>
