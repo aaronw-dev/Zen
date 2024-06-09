@@ -5,6 +5,11 @@
             "src": "logo/logo-512-filled.png",
             "type": "image/png",
             "sizes": "512x512"
+        },
+        {
+            "src": "logo/logo-1024-filled.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
         }
     ],
     "start_url": "../index.html",

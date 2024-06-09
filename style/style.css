@@ -28,6 +28,16 @@ body {
     font-weight: lighter;
 }
 
+.window-section {
+    width: 100vw;
+    height: 100vh;
+    background: var(--radial-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
 h1,
 h2,
 h3,
