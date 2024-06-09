@@ -9,6 +9,5 @@ async function getQuotes() {
     selectedQuote = quotes[getRandomInt(quotes.length - 1)]
     quoteBlock.innerHTML = selectedQuote.quote
     quoteAuthor.innerHTML = selectedQuote.author
-    console.log(selectedQuote)
 }
 getQuotes()
