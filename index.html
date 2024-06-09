@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/virtual_call.css">
     <link rel="stylesheet" href="../style/journal.css">
+    <link rel="stylesheet" href="../style/range.css">
     <script src="/script/swiped-events.min.js"></script>
     <link rel="icon" type="image/png" href="logo/logo-512.png">
     <link rel="manifest" href="manifest.json" />
@@ -31,7 +32,7 @@
         </div>
 
         <div class="action-buttons">
-            <button onclick="openPanel('dashboard',false);setNavOpen(true)">Get Started</button>
+            <button onclick="openDashboard()">Get Started</button>
             <!--<button>Log In</button>-->
         </div>
     </section>
@@ -82,6 +83,31 @@
             </div>
         </div>
     </section>
+    <section id="mindful-breathing" class="window-section">
+        <h1 class="section-title">Guided Meditation</h1>
+        <div class="breathing-player-container">
+            <span class="breathing-player-title">Deep Breathing</span>
+            <img src="/images/waveform3.svg">
+            <div class="breathing-progress-bar">
+                <span class="breathing-timestamp" id="breathing-starttime">1:23</span>
+                <input id="breathing-progress" type="range" min="0" max="100">
+                <span class="breathing-timestamp" id="breathing-starttime">5:12</span>
+            </div>
+        </div>
+        <div class="breathing-player-controls-wrapper">
+            <img src="/images/wave1.svg" class="wave">
+            <img src="/images/wave2.svg" class="wave">
+            <div class="breathing-player-controls">
+                <div class="breathing-player-buttons">
+                    <img src="/icons/previous.svg">
+                    <img src="/icons/play.svg">
+                    <img src="/icons/next.svg">
+                </div>
+                <button class="finishbreathing">Finish Session</button>
+            </div>
+        </div>
+    </section>
+
     <section id="virtual-call" class="window-section">
         <nav>
             <img src="logo/logo.svg">
@@ -109,8 +135,8 @@
                             <img class="meeting-control" src="/icons/chat.svg">
                             <img class="meeting-control" src="/icons/end_call.svg">
                         </div>
+                    </div>
                 </div>
-            </div>
     </section>
     <section id="journal" class="window-section">
         <nav>
@@ -131,7 +157,7 @@
         <img src="/icons/counselling.svg" onclick="openPanel('virtual-call')">
         <img src="/icons/journal.svg" onclick="openPanel('journal')">
         <img src="/icons/crisis.svg" onclick="transition()">
-        <img src="/icons/meditate.svg">
+        <img src="/icons/meditate.svg" onclick="openPanel('mindful-breathing')">
         <img src="/icons/profile.svg">
     </div>
     <script src="/script/script.js"></script>

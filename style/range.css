@@ -1,0 +1,50 @@
+/*Chrome*/
+:root {
+    --slider-fill: var(--text);
+    --slider-background: #C7C7C7;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #breathing-progress {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: var(--slider-background);
+        border-radius: 50px;
+        height: 8px;
+    }
+
+    #breathing-progress::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+
+    #breathing-progress::-webkit-slider-thumb {
+        width: 0;
+        -webkit-appearance: none;
+        height: 0;
+        cursor: ew-resize;
+        background: #434343;
+        box-shadow: -300px 0 0 300px var(--slider-fill);
+    }
+
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: var(--slider-fill);
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: var(--slider-background);
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+    background-color: var(--slider-fill);
+}
+
+input[type="range"]::-ms-fill-upper {
+    background-color: var(--slider-background);
+}

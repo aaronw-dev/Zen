@@ -189,19 +189,14 @@ p {
 .section-title {
     color: #F6F6F6;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.section-title h3 {
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    position: fixed;
 }
 
 .quote {
@@ -369,4 +364,78 @@ nav img {
         background-color: rgba(255, 55, 55, 1);
         transform: translate(-50%, -50%) scale(120);
     }
+}
+
+.breathing-player-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.breathing-player-container * {
+    width: 100%;
+}
+
+.breathing-player-title {
+    font-size: 35px;
+    text-align: center;
+}
+
+.breathing-progress-bar {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.breathing-timestamp {
+    width: min-content;
+}
+
+
+.breathing-player-controls-wrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.breathing-player-controls-wrapper .wave {
+    position: fixed;
+    bottom: 80px;
+    width: 100vw;
+}
+
+.breathing-player-controls {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: #106E74;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.breathing-player-buttons {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.breathing-player-buttons img {
+    height: 100%;
+}
+
+.finishbreathing {
+    padding: 5px 40px;
+    font-size: 25px;
+    background-color: #235664;
+    border: none;
+    border-radius: 50px;
 }

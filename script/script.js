@@ -36,3 +36,15 @@ document.addEventListener('swiped-left', function (e) {
 });
 
 document.addEventListener('swiped-right', function (e) { closeCurrentPanel() });
+
+function openDashboard() {
+    openPanel('dashboard', false);
+    setNavOpen(true);
+    localStorage.setItem("started", true)
+}
+if (localStorage.getItem("started")) {
+    let targetPanel = document.getElementById("dashboard")
+    targetPanel.style.zIndex = 100;
+    targetPanel.style.left = 0;
+    setNavOpen(openPanels.length == 0)
+}
