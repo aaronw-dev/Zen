@@ -6,7 +6,7 @@ const breathingProgress = document.getElementById("breathing-progress")
 const breathingStart = document.getElementById("breathing-starttime")
 const breathingEnd = document.getElementById("breathing-endtime")
 const mindfulPlay = document.getElementById("playbutton")
-
+const crisisModeSection = document.getElementById("crisismode")
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -38,6 +38,8 @@ function closeCurrentPanel() {
 }
 function transition() {
     transitionDiv.style.animation = "1s transition-red forwards";
+    crisisModeSection.style.animation = "1s activateCrisisMode forwards 1s";
+    console.log("crisis mode activate!")
 }
 document.addEventListener('swiped-left', function (e) {
 });

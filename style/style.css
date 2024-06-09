@@ -444,3 +444,39 @@ nav img {
     width: 100%;
     height: 10vh;
 }
+
+.crisis {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+}
+
+@keyframes activateCrisisMode {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.crisismode-container {
+    position: fixed;
+    height: 100%;
+    width: 90vw;
+    padding-top: 100px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.crisismode-container * {
+    text-align: center;
+}
