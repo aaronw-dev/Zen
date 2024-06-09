@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/journal.css">
     <script src="/script/swiped-events.min.js"></script>
+    <script src="/script/script.js"></script>
     <link rel="icon" type="image/png" href="logo/logo-512.png">
     <link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
 
-    <section id="begin" class="window-section">
+    <section id="begin" class="window-section open">
         <div class="hero">
             <img src="logo/logo.svg">
             <span class="hero-name">Zen</span>
@@ -27,8 +28,8 @@
         </div>
 
         <div class="action-buttons">
-            <button>Get Started</button>
-            <button>Log In</button>
+            <button onclick="openPanel('dashboard')">Get Started</button>
+            <!--<button>Log In</button>-->
         </div>
     </section>
 
@@ -89,15 +90,8 @@
                     placeholder="Write your thoughts here..."></textarea>
             </div>
         </div>
-        <div class="bottom-nav">
-            <img src="../icons/counselling.svg">
-            <img src="../icons/journal.svg">
-            <img src="../icons/crisis.svg">
-            <img src="../icons/meditate.svg">
-            <img src="../icons/profile.svg">
-        </div>
     </section>
-    <div class=" bottom-nav">
+    <div class="bottom-nav">
         <img src="/icons/counselling.svg">
         <img src="/icons/journal.svg">
         <img src="/icons/crisis.svg">

@@ -22,6 +22,10 @@ body {
     background: var(--linear-bg);
 }
 
+#begin {
+    z-index: 100;
+}
+
 * {
     font-family: Inter;
     color: var(--text);
@@ -34,8 +38,13 @@ body {
     background: var(--radial-bg);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 100vw;
     display: block;
+    transition: 400ms left;
+}
+
+.window-section.open {
+    left: 0vw;
 }
 
 h1,
@@ -225,7 +234,7 @@ nav img {
     position: absolute;
     bottom: 0px;
     left: 0;
-    z-index: 100;
+    z-index: 1;
     background-color: #16404B;
     padding: 10px 0px;
     gap: 40px;
