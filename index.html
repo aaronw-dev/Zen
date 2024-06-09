@@ -66,7 +66,7 @@
                         <span class="mindful-time">3 min</span>
                     </div>
                     <div class="mindful-audio">
-                        <img class="audio-play" src="/icons/play.svg">
+                        <img class="audio-play" src="/icons/play.svg" onclick="startMindful('breathing-3min')">
                         <img class="audio-wave" src="/images/waveform2.svg">
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                         <span class="mindful-time">5 min</span>
                     </div>
                     <div class="mindful-audio">
-                        <img class="audio-play" src="/icons/play.svg">
+                        <img class="audio-play" src="/icons/play.svg" onclick="startMindful('scan-4min')">
                         <img class="audio-wave" src="/images/waveform1.svg">
                     </div>
                 </div>
@@ -87,23 +87,24 @@
         <h1 class="section-title">Guided Meditation</h1>
         <div class="breathing-player-container">
             <span class="breathing-player-title">Deep Breathing</span>
-            <img src="/images/waveform3.svg">
+            <canvas id="canvas"></canvas>
             <div class="breathing-progress-bar">
-                <span class="breathing-timestamp" id="breathing-starttime">1:23</span>
+                <span class="breathing-timestamp" id="breathing-starttime"></span>
                 <input id="breathing-progress" type="range" min="0" max="100">
-                <span class="breathing-timestamp" id="breathing-starttime">5:12</span>
+                <span class="breathing-timestamp" id="breathing-endtime"></span>
             </div>
         </div>
+        <audio src="audio/breathing-3min.mp3" id="mindful-audio"></audio>
         <div class="breathing-player-controls-wrapper">
             <img src="/images/wave1.svg" class="wave">
             <img src="/images/wave2.svg" class="wave">
             <div class="breathing-player-controls">
                 <div class="breathing-player-buttons">
-                    <img src="/icons/previous.svg">
-                    <img src="/icons/play.svg">
-                    <img src="/icons/next.svg">
+                    <img src="/icons/previous.svg" onclick="skipTime(-10)">
+                    <img src="/icons/pause.svg" id="playbutton" onclick="playPauseMindful()">
+                    <img src="/icons/next.svg" onclick="skipTime(10)">
                 </div>
-                <button class="finishbreathing">Finish Session</button>
+                <button class="finishbreathing" onclick="closeCurrentPanel()">Finish Session</button>
             </div>
         </div>
     </section>
@@ -160,6 +161,7 @@
         <img src="/icons/meditate.svg" onclick="openPanel('mindful-breathing')">
         <img src="/icons/profile.svg">
     </div>
+    <script src="https://unpkg.com/audiomotion-analyzer/dist"></script>
     <script src="/script/script.js"></script>
     <script src="/script/journal.js"></script>
     <script src="/script/quotes.js"></script>
