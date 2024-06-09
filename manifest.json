@@ -4,12 +4,14 @@
         {
             "src": "logo/logo-512-filled.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "maskable"
         },
         {
             "src": "logo/logo-1024-filled.png",
             "type": "image/png",
-            "sizes": "1024x1024"
+            "sizes": "1024x1024",
+            "purpose": "maskable"
         }
     ],
     "start_url": "../index.html",
