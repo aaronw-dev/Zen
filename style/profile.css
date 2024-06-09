@@ -1,0 +1,43 @@
+.journal-wrapper {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.journal-block {
+    width:100%;
+    margin: 0 auto;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(4.45px);
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-block .journal-block-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18.5px;
+}
+.journal-block-title {
+    padding-bottom: 10px ;
+}
+.journal-block-text {
+    background: rgba(220, 220, 220, 0.11);
+    margin-top: 10px;
+    font-size: 14.5px;
+    text-align: left;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.journal-block-date {
+    text-align: left;
+    font-size: 16px;
+    flex-grow: 1;
+}
