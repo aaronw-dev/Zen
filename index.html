@@ -7,6 +7,7 @@
     <title>Zen</title>
     <link rel="stylesheet" href="../style/colors.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/virtual_call.css">
     <link rel="stylesheet" href="../style/journal.css">
     <script src="/script/swiped-events.min.js"></script>
     <link rel="icon" type="image/png" href="logo/logo-512.png">
@@ -81,6 +82,36 @@
             </div>
         </div>
     </section>
+    <section id="virtual-call" class="window-section">
+        <nav>
+            <img src="logo/logo.svg">
+            <span class="nav-text">Zen</span>
+        </nav>
+        <div class="meeting-wrapper">
+            <div class="meeting-area">
+                <div class="profile-icon-wrapper">
+                    <img class="profile-icon" src="/images/brothers.jpg">
+                </div>
+                <img class="calling-icon" src="/icons/end_call.svg">
+                <div class="profile-icon-wrapper">
+                    <img class="profile-icon" src="/images/brothers.jpg">
+                </div>
+            </div>
+            <span class="meeting-text">Virtual Call (calling Therapist)</span>
+            <div class="meeting-block">
+                <div class="meeting-recipient">
+                </div>
+                <div class="meeting-controls">
+                    <div class="meeting-controls-wrapper">
+                        <div class="meeting-controls-block">
+                            <img class="meeting-control" src="/icons/mic.svg">
+                            <img class="meeting-control" src="/icons/video.svg">
+                            <img class="meeting-control" src="/icons/chat.svg">
+                            <img class="meeting-control" src="/icons/end_call.svg">
+                        </div>
+                </div>
+            </div>
+    </section>
     <section id="journal" class="window-section">
         <nav>
             <img src="../logo/logo.svg">
@@ -97,7 +128,7 @@
     </section>
     <div class="transition" id="transition"></div>
     <div class="bottom-nav closed" id="bottomnav">
-        <img src="/icons/counselling.svg">
+        <img src="/icons/counselling.svg" onclick="openPanel('virtual-call')">
         <img src="/icons/journal.svg" onclick="openPanel('journal')">
         <img src="/icons/crisis.svg" onclick="transition()">
         <img src="/icons/meditate.svg">
