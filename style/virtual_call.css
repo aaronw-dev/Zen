@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Inter;
+    src: url("../font/Inter-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../font/Inter-ExtraLight.ttf");
+    font-weight: lighter;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: var(--radial-bg);
+}
+
+* {
+    font-family: Inter;
+    color: var(--text);
+    font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+nav img {
+    height: 3.5em;
+}
+
+.nav-text {
+    font-size: 2.3em;
+}
+
+.bottom-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(220, 220, 220, 0.11);
+    padding: 10px 10px;
+    gap: 40px;
+}
+
+.bottom-nav img {
+    height: 40px;
+}
+
+.meeting-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.meeting-area {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 8px;
+}
+
+.meeting-text {
+    font-size: 23px;
+}
+
+.calling-icon {
+    height: 15px;
+}
+
+.profile-icon-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    width: 110px;
+    border: 5px solid white;
+}
+
+.profile-icon {
+    justify-self: center;
+    display: flex;
+    width: 100%;
+    transform: translateY(-15px);
+}
+
+.meeting-block {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(4.45px);
+    display: flex;
+    flex-direction: column;
+}
+
+.meeting-recipient {
+    min-height: 650px;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.meeting-controls{
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+.meeting-controls-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.meeting-controls-block {
+    display: flex;
+    gap: 45px;
+}
+
+.meeting-control {
+    height: 40px;
+    width: 40px;
+}
