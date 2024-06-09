@@ -7,12 +7,14 @@
     <title>Zen</title>
     <link rel="stylesheet" href="../style/colors.css">
     <link rel="stylesheet" href="../style/style.css">
+    <script src="/script/swiped-events.min.js"></script>
+    <link rel="icon" type="image/png" href="logo/logo-512.png">
     <link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
     <div class="hero">
-        <img src="../logo.svg">
+        <img src="logo/logo.svg">
         <span class="hero-name">Zen</span>
     </div>
 
@@ -25,6 +27,57 @@
         <button>Get Started</button>
         <button>Log In</button>
     </div>
+
+    <section id="dashboard" class="window-section">
+        <nav>
+            <img src="logo/logo.svg">
+            <span class="nav-text">Zen</span>
+        </nav>
+        <div class="zen-wrapper">
+            <div class="greeting">
+                <div class="profile-icon-wrapper">
+                    <img class="profile-icon" src="/images/brothers.jpg">
+                </div>
+                <span class="greeting-text">Good morning, Aaron.</span>
+            </div>
+            <div class="zen-block">
+                <h1 class="zen-block-title">Inspirational Quote of the Day</h1>
+                <div class="quote-block">Life is like riding a bicycle. To keep your balance, you must keep moving.
+                </div>
+                <div class="quote-author">Albert Einstein</div>
+            </div>
+            <div class="zen-block">
+                <h1 class="zen-block-title">Mindful Breathing</h1>
+                <div class="mindful-block">
+                    <div class="mindful-actions">
+                        <span class="mindful-title">Deep Breathing</span>
+                        <span class="mindful-time">3 min</span>
+                    </div>
+                    <div class="mindful-audio">
+                        <img class="audio-play" src="/icons/play.svg">
+                        <img class="audio-wave" src="/images/waveform2.svg">
+                    </div>
+                </div>
+                <div class="mindful-block">
+                    <div class="mindful-actions">
+                        <span class="mindful-title">Focused Meditation</span>
+                        <span class="mindful-time">5 min</span>
+                    </div>
+                    <div class="mindful-audio">
+                        <img class="audio-play" src="/icons/play.svg">
+                        <img class="audio-wave" src="/images/waveform1.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <img src="/icons/counselling.svg">
+            <img src="/icons/journal.svg">
+            <img src="/icons/crisis.svg">
+            <img src="/icons/meditate.svg">
+            <img src="/icons/profile.svg">
+        </div>
+    </section>
 </body>
 
 </html>

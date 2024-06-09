@@ -191,3 +191,133 @@ p {
     font-weight: 200;
     line-height: normal;
 }
+
+nav {
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+nav img {
+    height: 3.5em;
+}
+
+.nav-text {
+    font-size: 2.3em;
+}
+
+.bottom-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 100;
+    background-color: #16404B;
+    padding: 10px 0px;
+    gap: 40px;
+}
+
+.bottom-nav img {
+    height: 40px;
+}
+
+.zen-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.greeting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.greeting-text {
+    font-size: 23px;
+}
+
+.profile-icon-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    width: 110px;
+    border: 5px solid white;
+}
+
+.profile-icon {
+    width: 100%;
+    transform: translateY(-15px);
+}
+
+.zen-block {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(4.45px);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.zen-block .zen-block-title {
+    font-weight: bold;
+    font-size: 18.5px;
+}
+
+.quote-block {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 16.5px;
+}
+
+.quote-author {
+    margin-left: auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.quote-author::before {
+    content: "- ";
+}
+
+.mindful-block {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mindful-actions {
+    display: flex;
+}
+
+.mindful-actions span {
+    font-weight: bold;
+}
+
+.mindful-time {
+    margin-left: auto;
+}
+
+.mindful-audio {
+    display: flex;
+    gap: 5px;
+}
+
+.audio-play {
+    width: 50px;
+}
+
+.audio-wave {
+    width: 20px;
+    flex-grow: 1;
+}

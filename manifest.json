@@ -2,7 +2,7 @@
     "name": "Zen",
     "icons": [
         {
-            "src": "logo/logo-512.png",
+            "src": "logo/logo-512-filled.png",
             "type": "image/png",
             "sizes": "512x512"
         }
