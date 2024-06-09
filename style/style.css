@@ -107,7 +107,7 @@ p {
     flex-direction: column;
     align-items: center;
     width: 60%;
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     gap: 20px;
     left: 50%;
@@ -347,4 +347,27 @@ nav img {
 .audio-wave {
     width: 20px;
     flex-grow: 1;
+}
+
+.transition {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+@keyframes transition-red {
+    0% {
+        background-color: rgba(255, 55, 55, 0.3);
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        background-color: rgba(255, 55, 55, 1);
+        transform: translate(-50%, -50%) scale(120);
+    }
 }

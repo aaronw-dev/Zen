@@ -1,53 +1,40 @@
-[
-    {
-        "author": "Albert Einstein",
-        "quotes": [
-            {
-                "id": 1,
-                "quote": "Life is like riding a bicycle. To keep your balance you must keep moving."
-            },
-            {
-                "id": 2,
-                "quote": "Imagination is more important than knowledge."
-            },
-            {
-                "id": 3,
-                "quote": "We cannot solve our problems with the same thinking we used when we created them."
-            }
-        ]
-    },
-    {
-        "author": "Maya Angelou",
-        "quotes": [
-            {
-                "id": 1,
-                "quote": "You will face many defeats in life, but never let yourself be defeated."
-            },
-            {
-                "id": 2,
-                "quote": "If you don't like something, change it. If you can't change it, change your attitude."
-            },
-            {
-                "id": 3,
-                "quote": "Nothing will work unless you do."
-            }
-        ]
-    },
-    {
-        "author": "Mark Twain",
-        "quotes": [
-            {
-                "id": 1,
-                "quote": "The secret of getting ahead is getting started."
-            },
-            {
-                "id": 2,
-                "quote": "The best way to cheer yourself up is to try to cheer somebody else up."
-            },
-            {
-                "id": 3,
-                "quote": "The lack of money is the root of all evil."
-            }
-        ]
-    }
-]
+{
+    "quotes": [
+        {
+            "author": "Albert Einstein",
+            "quote": "Life is like riding a bicycle. To keep your balance you must keep moving."
+        },
+        {
+            "author": "Albert Einstein",
+            "quote": "Imagination is more important than knowledge."
+        },
+        {
+            "author": "Albert Einstein",
+            "quote": "We cannot solve our problems with the same thinking we used when we created them."
+        },
+        {
+            "author": "Maya Angelou",
+            "quote": "You will face many defeats in life, but never let yourself be defeated."
+        },
+        {
+            "author": "Maya Angelou",
+            "quote": "If you don't like something, change it. If you can't change it, change your attitude."
+        },
+        {
+            "author": "Maya Angelou",
+            "quote": "Nothing will work unless you do."
+        },
+        {
+            "author": "Mark Twain",
+            "quote": "The secret of getting ahead is getting started."
+        },
+        {
+            "author": "Mark Twain",
+            "quote": "The best way to cheer yourself up is to try to cheer somebody else up."
+        },
+        {
+            "author": "Mark Twain",
+            "quote": "The lack of money is the root of all evil."
+        }
+    ]
+}
