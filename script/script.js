@@ -1,5 +1,6 @@
 var openPanels = []
 const bottomNav = document.getElementById("bottomnav")
+const transitionDiv = document.getElementById("transition")
 function openPanel(id, cangoback = true) {
     let targetPanel = document.getElementById(id)
     if (targetPanel != null) {
@@ -24,6 +25,9 @@ function closeCurrentPanel() {
         openPanels.pop()
         setNavOpen(openPanels.length == 0)
     }
+}
+function transition() {
+    transitionDiv.style.animation = "1s transition-red forwards";
 }
 document.addEventListener('swiped-left', function (e) {
 });
