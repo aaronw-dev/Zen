@@ -111,6 +111,9 @@ nav img {
     border-radius: 10px;
     background: rgba(220, 220, 220, 0.11);
     backdrop-filter: blur(4.45px);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .zen-block .zen-block-title {
@@ -133,46 +136,35 @@ nav img {
 .quote-author::before {
     content: "- ";
 }
-.audio-play {
+
+.mindful-block {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
 .mindful-actions {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: normal;
-    align-content: normal;
-  }
-  .mindful-audio {
-    padding-top: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: stretch;
-  }
-  .mindful-wave {
-    padding-left: 15px;
-  }
+}
 
-  .mindful-title{
-    align-items: left;
-    padding-top: 10px;
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .mindful-time{
-    align-items: right;
-    padding-top: 10px;
-    color: #F6F6F6;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+.mindful-actions span {
+    font-weight: bold;
+}
+
+.mindful-time {
+    margin-left: auto;
+}
+
+.mindful-audio {
+    display: flex;
+    gap: 5px;
+}
+
+.audio-play {
+    width: 50px;
+}
+
+.audio-wave {
+    width: 20px;
+    flex-grow: 1;
+}
