@@ -4,11 +4,11 @@
     flex-grow: 1;
     padding: 20px;
     gap: 10px;
-    padding-top: 0;
+    box-sizing: border-box;
 }
 
 
-.profile-icon-wrapper {
+/*.profile-icon-wrapper {
     margin-left: auto;
     border-radius: 50%;
     overflow: hidden;
@@ -21,7 +21,7 @@
     width: 40%;
     transform: translateY(-15px);
 }
-
+*/
 
 .journal-block {
     width: 100%;
@@ -54,9 +54,11 @@
     font-weight: bold;
     font-size: 18.5px;
 }
+
 .journal-block-title {
-    padding-bottom: 10px ;
+    padding-bottom: 10px;
 }
+
 .journal-block-text {
     background: rgba(220, 220, 220, 0.11);
     margin-top: 10px;

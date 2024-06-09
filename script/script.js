@@ -7,6 +7,7 @@ const breathingStart = document.getElementById("breathing-starttime")
 const breathingEnd = document.getElementById("breathing-endtime")
 const mindfulPlay = document.getElementById("playbutton")
 const crisisModeSection = document.getElementById("crisismode")
+const nameText = document.getElementById("name-text")
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -53,7 +54,7 @@ function openDashboard() {
 }
 if (localStorage.getItem("started")) {
     let targetPanel = document.getElementById("dashboard")
-    targetPanel.style.zIndex = 100;
+    targetPanel.style.zIndex = 99;
     targetPanel.style.left = 0;
     setNavOpen(openPanels.length == 0)
 }
@@ -140,6 +141,13 @@ function renderFrame() {
 function skipTime(time) {
     mindfulAudio.currentTime += time
 }
+
+function setNameText() {
+    if (localStorage.getItem("name") != null) {
+        nameText.innerHTML = "Good morning, " + localStorage.getItem("name") + "."
+    }
+}
+setNameText()
 renderFrame();
 
 setInterval(updateMindfulPlayer, 50)

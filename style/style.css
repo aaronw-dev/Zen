@@ -23,10 +23,6 @@ body {
     overflow: hidden;
 }
 
-#begin {
-    z-index: 100;
-}
-
 * {
     font-family: Inter;
     color: var(--text);
