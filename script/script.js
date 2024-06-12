@@ -8,6 +8,17 @@ const breathingEnd = document.getElementById("breathing-endtime")
 const mindfulPlay = document.getElementById("playbutton")
 const crisisModeSection = document.getElementById("crisismode")
 const nameText = document.getElementById("name-text")
+
+function generateKeys() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const crypt = new JSEncrypt({ default_key_size: 2048 });
+            const pubkey = crypt.getPublicKey()
+            const privkey = crypt.getPrivateKey()
+            resolve({ pubkey, privkey });
+        }, 50);
+    });
+}
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -151,3 +162,8 @@ setNameText()
 renderFrame();
 
 setInterval(updateMindfulPlayer, 50)
+async function init(){
+    const result = await generateKeys();
+    console.log(result)
+}
+init()
