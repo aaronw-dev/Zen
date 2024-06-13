@@ -162,8 +162,69 @@ setNameText()
 renderFrame();
 
 setInterval(updateMindfulPlayer, 50)
-async function init(){
-    const result = await generateKeys();
-    console.log(result)
+async function init() {
+    let pubkey, privkey
+    if (localStorage.getItem("pubkey") == null) {
+        let result = await generateKeys();
+        pubkey = result.pubkey
+        privkey = result.privkey
+        localStorage.setItem("pubkey", pubkey)
+        alert("HERE'S THE PRIVATE KEY!!")
+    } else {
+        pubkey = localStorage.getItem("pubkey")
+        privkey = ""
+    }
+    var encryptor = new JSEncrypt({ default_key_size: 1024 });
+    encryptor.setPublicKey(pubkey)
+    var encryptedmessage = encryptor.encrypt("what the sigma")
+    console.log(encryptedmessage)
+
+    var decryptor = new JSEncrypt();
+    decryptor.setPrivateKey(privkey)
+    var decryptedmessage = decryptor.decrypt(encryptedmessage)
+
+    console.log(decryptedmessage)
+
+    // Availability of `window.PublicKeyCredential` means WebAuthn is usable.  
+    // `isUserVerifyingPlatformAuthenticatorAvailable` means the feature detection is usable.  
+    // `​​isConditionalMediationAvailable` means the feature detection is usable.  
+    if (window.PublicKeyCredential &&
+        PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable &&
+        PublicKeyCredential.isConditionalMediationAvailable) {
+        // Check if user verifying platform authenticator is available.  
+        Promise.all([
+            PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable(),
+            PublicKeyCredential.isConditionalMediationAvailable(),
+        ]).then(async results => {
+            if (results.every(r => r === true)) {
+                const publicKeyCredentialCreationOptions = {
+                    challenge: "EEEEEEEEEEEEEEEEEEEEE",
+                    rp: {
+                      name: "Example",
+                      id: "example.com",
+                    },
+                    user: {
+                      id: "EEEEEEEEEEEEEEEEEEE",
+                      name: "john78",
+                      displayName: "John",
+                    },
+                    pubKeyCredParams: [{alg: -7, type: "public-key"},{alg: -257, type: "public-key"}],
+                    excludeCredentials: [{
+                      id: "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+                      type: 'public-key',
+                      transports: ['internal'],
+                    }],
+                    authenticatorSelection: {
+                      authenticatorAttachment: "platform",
+                      requireResidentKey: true,
+                    }
+                  };
+                  
+                  const credential = await navigator.credentials.create({
+                    publicKey: publicKeyCredentialCreationOptions
+                  });
+            }
+        });
+    }
 }
 init()
