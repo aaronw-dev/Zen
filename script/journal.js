@@ -6,4 +6,5 @@ const options = {
     day: 'numeric',
 };
 
-journalDateText.innerHTML = new Date().toLocaleDateString(undefined, options);
+let now = new Date()
+journalDateText.innerHTML = now.toLocaleDateString(undefined, options) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + now.toLocaleTimeString();

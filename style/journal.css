@@ -17,10 +17,11 @@
     flex-direction: column;
 }
 
-.journal-block .journal-block-title {
+.journal-block-title {
     text-align: center;
     font-weight: bold;
     font-size: 18.5px;
+    background: transparent;
 }
 
 .journal-block-text {

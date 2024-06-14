@@ -50,13 +50,10 @@
 }
 
 .journal-block .journal-block-title {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     font-size: 18.5px;
-}
-
-.journal-block-title {
-    padding-bottom: 10px;
+    border:none;
 }
 
 .journal-block-text {
