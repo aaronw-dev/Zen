@@ -476,3 +476,12 @@ nav img {
 .crisismode-container * {
     text-align: center;
 }
+
+.mindful-block-wrapper {
+    background: rgba(220, 220, 220, 0.11);
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+}

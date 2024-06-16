@@ -151,3 +151,5 @@ setNameText()
 renderFrame();
 
 setInterval(updateMindfulPlayer, 50)
+
+openPanel('mindful-selector')

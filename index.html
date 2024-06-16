@@ -74,6 +74,51 @@
         </div>
         </div>
     </section>
+    <section id="mindful-selector" class="window-section">
+        <h1 class="section-title">Guided Meditation</h1>
+        <div class="mindful-block-wrapper zen-block">
+            <div class="mindful-block">
+                <div class="mindful-actions">
+                    <span class="mindful-title">Deep Breathing</span>
+                    <span class="mindful-time">3 min</span>
+                </div>
+                <div class="mindful-audio">
+                    <img class="audio-play" src="/icons/play.svg" onclick="startMindful('breathing-3min')">
+                    <img class="audio-wave" src="/images/waveform2.svg">
+                </div>
+            </div>
+            <div class="mindful-block">
+                <div class="mindful-actions">
+                    <span class="mindful-title">Focused Meditation</span>
+                    <span class="mindful-time">5 min</span>
+                </div>
+                <div class="mindful-audio">
+                    <img class="audio-play" src="/icons/play.svg" onclick="startMindful('scan-4min')">
+                    <img class="audio-wave" src="/images/waveform1.svg">
+                </div>
+            </div>
+            <div class="mindful-block">
+                <div class="mindful-actions">
+                    <span class="mindful-title">Deep Breathing - Long</span>
+                    <span class="mindful-time">5 min</span>
+                </div>
+                <div class="mindful-audio">
+                    <img class="audio-play" src="/icons/play.svg" onclick="startMindful('breathing-5min')">
+                    <img class="audio-wave" src="/images/waveform3.svg">
+                </div>
+            </div>
+            <div class="mindful-block">
+                <div class="mindful-actions">
+                    <span class="mindful-title">Breathing Awareness</span>
+                    <span class="mindful-time">6 min</span>
+                </div>
+                <div class="mindful-audio">
+                    <img class="audio-play" src="/icons/play.svg" onclick="startMindful('breathawareness-6min')">
+                    <img class="audio-wave" src="/images/waveform4.svg">
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="dashboard" class="window-section">
         <nav>
             <img src="logo/logo.svg">
@@ -203,7 +248,7 @@
         <img src="/icons/counselling.svg" onclick="openPanel('virtual-call')">
         <img src="/icons/journal.svg" onclick="openPanel('journal')">
         <img src="/icons/crisis.svg" onclick="transition()">
-        <img src="/icons/meditate.svg" onclick="openPanel('mindful-breathing')">
+        <img src="/icons/meditate.svg" onclick="openPanel('mindful-selector')">
         <img src="/icons/profile.svg" onclick="openPanel('profile')">
     </div>
     <script src="https://unpkg.com/audiomotion-analyzer/dist"></script>
