@@ -39,10 +39,10 @@
         </div>
     </section>
     <section id="profile" class="window-section">
-        <div class="journal-wrapper">
+        <div class="profile-wrapper">
             <div class="profile-picture-block ">
                 <div class="text-and-button">
-                    <span class="journal-block-title">Profile Picture</span>
+                    <span class="profile-block-title">Profile Picture</span>
                     <div class="change-button">Change</div>
                 </div>
                 <div class="profile-icon-wrapper">
@@ -50,27 +50,27 @@
                 </div>
 
             </div>
-            <div class="journal-block">
-                <span class="journal-block-title">Personal Information</span>
-                <span class="journal-block-date">First Name</span>
-                <input type="text" class="journal-block-text" placeholder="First Name">
-                <span class="journal-block-date">Last Name</span>
-                <input type="text" class="journal-block-text" placeholder="Last Name">
-                <span class="journal-block-date">Email</span>
-                <input type="text" class="journal-block-text" placeholder="Email Address">
-                <span class="journal-block-date">Phone Humber</span>
-                <input type="text" class="journal-block-text" placeholder="Phone Number Name">
+            <div class="profile-block">
+                <span class="profile-block-title">Personal Information</span>
+                <span class="profile-block-date">First Name</span>
+                <input type="text" class="profile-block-text" placeholder="First Name">
+                <span class="profile-block-date">Last Name</span>
+                <input type="text" class="profile-block-text" placeholder="Last Name">
+                <span class="profile-block-date">Email</span>
+                <input type="text" class="profile-block-text" placeholder="Email Address">
+                <span class="profile-block-date">Phone Number</span>
+                <input type="text" class="profile-block-text" placeholder="Phone Number Name">
             </div>
-            <div class="journal-block">
-                <span class="journal-block-title">Virtual Assistant Information</span>
-                <span class="journal-block-date">First Name</span>
-                <input type="text" class="journal-block-text" placeholder="First Name">
-                <span class="journal-block-date">Last Name</span>
-                <input type="text" class="journal-block-text" placeholder="Last Name">
-                <span class="journal-block-date">Email</span>
-                <input type="text" class="journal-block-text" placeholder="Email Address">
-                <span class="journal-block-date">Phone Humber</span>
-                <input type="text" class="journal-block-text" placeholder="Phone Number Name">
+            <div class="profile-block">
+                <span class="profile-block-title">Virtual Assistant Information</span>
+                <span class="profile-block-date">First Name</span>
+                <input type="text" class="profile-block-text" placeholder="First Name">
+                <span class="profile-block-date">Last Name</span>
+                <input type="text" class="profile-block-text" placeholder="Last Name">
+                <span class="profile-block-date">Email</span>
+                <input type="text" class="profile-block-text" placeholder="Email Address">
+                <span class="profile-block-date">Phone Number</span>
+                <input type="text" class="profile-block-text" placeholder="Phone Number Name">
             </div>
         </div>
         </div>
@@ -192,11 +192,12 @@
         </nav>
         <div class="journal-wrapper">
             <div class="journal-block">
-                <input type="text" class="journal-block-title" value="Journal #1">
+                <input type="text" class="journal-block-title" id="journal-title" value="Journal #1">
                 <h1 class="journal-block-date" id="journaldate">Date</h1>
                 <textarea class="journal-block-text" placeholder="Write your thoughts here..."></textarea>
             </div>
         </div>
+        <button onclick="quickCrypt()" class="journal-quickencrypt">Quick Encrypt</button>
     </section>
     <div class="transition" id="transition"></div>
     <div class="bottom-nav closed" id="bottomnav">

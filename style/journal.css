@@ -6,7 +6,6 @@
 }
 
 .journal-block {
-    margin: 0 auto;
     flex-grow: 1;
     padding: 10px;
     box-sizing: border-box;
@@ -15,22 +14,25 @@
     backdrop-filter: blur(4.45px);
     display: flex;
     flex-direction: column;
+    border-radius: 40px;
+    width: 100%;
 }
-
 .journal-block-title {
     text-align: center;
     font-weight: bold;
     font-size: 18.5px;
     background: transparent;
+    border:none;
 }
 
 .journal-block-text {
-    background: rgba(220, 220, 220, 0.11);
+    border: none;
+    background-color: transparent;
     margin-top: 10px;
     font-size: 14.5px;
-    text-align: center;
     flex-grow: 1;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .journal-block-date {
@@ -38,4 +40,14 @@
     font-size: 16px;
     font-style: italic;
     flex-grow: 1;
+}
+
+.journal-quickencrypt {
+    margin: 20px;
+    margin-top: 0;
+    background-color: #235664;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
 }
